@@ -3,15 +3,15 @@
     "name": "Library",
     "version": "17.0.1.0",
     "depends": [
-        "base"
+        "base",
     ],
     "external_dependencies": {},
     "author": "Odev Solutions",
     "website": "https://www.odevsolutions.com",
-    "summary": """Library""",
+    "summary": "Library",
     "description": """
-        Library
-    """,
+Library
+""",
     "category": "Extra Tools",
     "data": [
         "security/ir.model.access.csv",

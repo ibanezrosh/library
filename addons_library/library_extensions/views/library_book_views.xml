@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Extend Tree View -->
+    <record id="library_book_view_tree_inherit" model="ir.ui.view">
+        <field name="name">library.book.view.tree.inherit</field>
+        <field name="model">library.book</field>
+        <field name="inherit_id" ref="library.library_book_view_tree"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//tree" position="inside">
+                <field name="author_id"/>
+                <field name="category_id"/>
+            </xpath>
+
+        </field>
+    </record>
+
+    <!-- Extend Form View -->
+    <record id="library_book_view_form_inherit" model="ir.ui.view">
+        <field name="name">library.book.view.form.inherit</field>
+        <field name="model">library.book</field>
+        <field name="inherit_id" ref="library.library_book_view_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//group" position="inside">
+                <field name="author_id"/>
+                <field name="category_id" widget="many2many_tags"/>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>
