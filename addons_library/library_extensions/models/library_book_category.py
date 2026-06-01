@@ -17,3 +17,4 @@ class LibraryBookCategory(models.Model):
             "Category name must be unique."
         )
     ]
+                                                            
